@@ -1,6 +1,17 @@
 # Clean Flutter Manifest (CFM)
 A opined proposal of clean architecture for Flutter applications.
 
+## Table of Contents
+
+- [Clean Architecture Overview](#clean-architecture-overview)
+- [The CFM Proposal](#the-cfm-proposal)
+- [File Structure](#file-structure)
+- [Good Practices](#good-practices)
+    - [Test-Driven Development (TDD)](#test-driven-development-tdd)
+    - [Follow SOLID Principles](#follow-solid-principles)
+    - [Clean Code](#clean-code)
+- [Projects Examples Using CFM](#projects-examples-using-cfm)
+
 # Clean Architecture Overview
 Clean Architecture is a _software development pattern_ that helps to create scalable, testable and maintainable applications. It was introduced by Robert C. Martin (also known as Uncle Bob) in his book, "Clean Architecture: A Craftsman's Guide to Software Structure and Design".
 
@@ -67,7 +78,7 @@ Here are some good practices to keep in mind when developing a project using Cle
 ### Test-Driven Development (TDD)
 Test-Driven Development is a software development process that emphasizes writing automated tests before writing the actual code. TDD helps to ensure that the code is well-designed, easy to maintain, and bug-free. By writing tests first, you can ensure that your code meets the requirements and passes all the acceptance criteria.
 
-### Folow SOLID Principles
+### Follow SOLID Principles
 The SOLID principles are a set of guidelines that help to create clean, maintainable, and scalable code. They are:
 
 - **Single Responsibility Principle (SRP):** A class should have only one reason to change.
@@ -86,6 +97,6 @@ Clean Code is a set of principles and guidelines that help to create code that i
 By following these principles and guidelines, you can ensure that your code is well-designed, easy to maintain, and scalable. This will make it easier to add new features, fix bugs, and update dependencies over time.
 
  
-# Projects Exlamples Using CFM
+# Projects Examples Using CFM
  
 - [authentication app using CFM](https://github.com/HenriqueNas/clean_arch_flutter_auth)
