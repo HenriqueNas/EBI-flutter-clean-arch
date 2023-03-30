@@ -29,11 +29,12 @@ _There are three main principles of Clean Architecture:_
 # The CFM Proposal
 This project is organized using Clean Architecture principles to promote separation of concerns, independence between layers, and testability. The codebase is divided into three main layers:
 
-- **Externals:** This layer contains infrastructure code that interacts with external systems such as databases, web services, and other external services. It defines contracts (interfaces or abstract classes) that specify how the external systems should be interacted with, and then provides implementations for those contracts.
+- **Externals:** The Externals layer contains infrastructure code that interacts with external systems such as databases, web services, and other external services. This layer defines contracts (interfaces or abstract classes) that specify how the external systems should be interacted with, and then provides implementations for those contracts. The purpose of this layer is to isolate the application from external dependencies and make it easier to switch out external systems without affecting the rest of the application.
 
-- **Adapters:** This layer contains code that adapts the domain objects and use cases to the infrastructure code provided by the external layer. It contains controllers, models, providers, services, and sources.
+- **Adapters:** The Adapters layer acts like a bridge between Externals and Internals, contains code that adapts the domain objects and use cases to the infrastructure code provided by the external layer. It includes controllers, models, providers, services, and sources. The adapters are responsible for mapping data between the domain objects and the external systems, and for providing a consistent interface for the domain layer to interact with the external systems. This layer is designed to ensure that the domain layer remains decoupled from the specific implementation details of the external systems.
 
-- **Internals:** This layer contains domain-specific code that defines entities, use cases, and business logic. It includes entities, failures, services, and use cases
+- **Internals:** The Internals layer contains domain-specific code that defines entities, failures, use cases, and business logic. The purpose of this layer is to encapsulate the business logic of the application and keep it separate from the infrastructure and presentation layers. The domain layer defines the core entities and business rules of the application, and the use cases define the specific operations that can be performed on those entities. This layer is the most stable and least likely to change over time, which makes it ideal for testing and reuse.
+
 
 # File Structure
 Here are a sample of how can you structure your project with CFM
