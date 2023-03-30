@@ -23,8 +23,43 @@ This project is organized using Clean Architecture principles to promote separat
 - **Adapters:** This layer contains code that adapts the domain objects and use cases to the infrastructure code provided by the external layer. It contains controllers, models, providers, services, and sources.
 
 - **Internals:** This layer contains domain-specific code that defines entities, use cases, and business logic. It includes entities, failures, services, and use cases
+
+## File Structure
+Here are a sample of how can you structure your project with CFM
+
+```
+clean_flutter_manifest_sample
+├─ lib
+│  ├─ externals
+│  │  ├─ database
+│  │  │  ├─ SQL
+│  │  │  └─ cache
+│  │  ├─ drivers
+│  │  ├─ presenter
+│  │  │  ├─ pages
+│  │  │  ├─ utils
+│  │  │  └─ widgets
+│  │  ├─ sources // sources contracts implementations
+│  │  └─ web
+│  │     ├─ http
+│  │     │  ├─ client
+│  │     │  └─ middleware
+│  │     ├─ socket
+│  │     │  ├─ client
+│  │     └─ └─ middleware
+│  ├─ adapters // do not contain Flutter imports
+│  │  ├─ controllers
+│  │  ├─ models // every model extends a entity
+│  │  ├─ providers
+│  │  ├─ services // services contracts implementations
+│  │  └─ sources // just contracts
+│  ├─ internals // do not contain Flutter imports
+│  │  ├─ entities
+│  │  ├─ failures
+│  │  ├─ services  // just contracts
+└─ └─ └─ usecases
+```
  
- 
- ## Exlamples
+## Projects Exlamples Using CFM
  
 - [authentication app using CFM](https://github.com/HenriqueNas/clean_arch_flutter_auth)
