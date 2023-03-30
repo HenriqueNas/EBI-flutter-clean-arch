@@ -4,22 +4,10 @@ Test-Driven Development (TDD) is a software development process that emphasizes 
 TDD helps to ensure that the code is well-designed, easy to maintain, and bug-free. 
 By writing tests first, you can ensure that your code meets the requirements and passes all the acceptance criteria.
 
-## Why TDD?
+## Why TDD With CFM?
 
-There are several benefits of using TDD:
-
-1. Better quality code: By writing tests first, you ensure that your code is well-designed and follows the requirements.
-
-2. Early bug detection: Also, you can detect bugs early in the development cycle, which is cheaper and easier to fix than later stages.
-
-3. Improved maintainability: By having automated tests, you can refactor your code with confidence, knowing that you have tests in place to ensure that everything still works.
-
-4. Increased productivity: TDD forces you to think through the requirements before writing code, which can save you time in the long run.
-
-
-## Benefits of TDD With CFM
-
-TDD can be applied to any software development project, including Flutter applications built using Clean Flutter Manifest (CFM). Here are some benefits of applying TDD with CFM:
+TDD can be applied to any software development project, including Flutter applications built using Clean Flutter Manifest (CFM). 
+Here are some benefits of applying TDD with CFM:
 
 1. **Improved code quality:** Using CFM's Clean Architecture principles and TDD can lead to a more modular, maintainable, and testable codebase. By separating concerns into distinct layers and writing tests first, you can ensure that each component of the application works as expected and is properly isolated from other components.
 
@@ -30,6 +18,8 @@ TDD can be applied to any software development project, including Flutter applic
 4. **Improved collaboration:** Using CFM's Clean Architecture principles and TDD can make it easier for developers to collaborate and work on different parts of the codebase independently. By defining clear boundaries and interfaces between layers, multiple developers can work on different components of the application at the same time without worrying about conflicts or dependencies.
 
 Overall, combining CFM's Clean Architecture principles with TDD can lead to a more maintainable, modular, and testable codebase that is easier to iterate on and collaborate on.
+
+## Tutorial
 
 Here are some guidelines for applying TDD with CFM:
 
