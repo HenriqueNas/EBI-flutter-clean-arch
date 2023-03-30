@@ -79,7 +79,7 @@ Here are some good practices to keep in mind when developing a project using Cle
 ### [Test-Driven Development (TDD)](https://github.com/HenriqueNas/clean-flutter-manifest/blob/main/TDD.md)
 Test-Driven Development is a software development process that emphasizes writing automated tests before writing the actual code. TDD helps to ensure that the code is well-designed, easy to maintain, and bug-free. By writing tests first, you can ensure that your code meets the requirements and passes all the acceptance criteria.
 
-### Follow SOLID Principles
+### [Follow SOLID Principles](https://github.com/HenriqueNas/clean-flutter-manifest/blob/main/SOLID.md)
 The SOLID principles are a set of guidelines that help to create clean, maintainable, and scalable code. They are:
 
 - **Single Responsibility Principle (SRP):** A class should have only one reason to change.
