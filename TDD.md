@@ -10,7 +10,7 @@ There are several benefits of using TDD:
 
 1. Better quality code: By writing tests first, you ensure that your code is well-designed and follows the requirements.
 
-2. Early bug detection: By writing tests first, you can detect bugs early in the development cycle, which is cheaper and easier to fix than later stages.
+2. Early bug detection: Also, you can detect bugs early in the development cycle, which is cheaper and easier to fix than later stages.
 
 3. Improved maintainability: By having automated tests, you can refactor your code with confidence, knowing that you have tests in place to ensure that everything still works.
 
@@ -111,27 +111,31 @@ By following the TDD approach, you can ensure that your code is well-designed, e
 
 ## Organizing Tests
 
-One way to do this is to create a test directory at the root level of your project, and within that directory create subdirectories that mirror the structure of your /lib directory. 
-For example, if you have a file at /lib/screens/home_screen.dart, you could create a corresponding test file at /test/screens/home_screen_test.dart.
+One way to do this is to create a test directory at the root level of your project, and within that directory create subdirectories that mirror the structure of your `/lib` directory. 
+For example, if you have a file at `/lib/screens/home_screen.dart`, you could create a corresponding test file at `/test/screens/home_screen_test.dart`.
 
 Here's an example of what the directory structure might look like:
 
 ```
 /my_flutter_app
   /lib
-    /screens
-      home_screen.dart
-      ...
-    /models
-      user.dart
-      ...
+    /externals 
+      /pages
+        home_page.dart
+        ...
+    /adapters
+      /models
+        user_model.dart
+        ...
   /test
-    /screens
-      home_screen_test.dart
-      ...
-    /models
-      user_test.dart
-      ...
+    /externals 
+      /pages
+        home_page.test.dart
+        ...
+    /adapters
+      /models
+        user_model.test.dart
+        ...
 ```
 
 By organizing the tests in this way, you can easily locate the tests that correspond to specific files in your /lib directory. 
